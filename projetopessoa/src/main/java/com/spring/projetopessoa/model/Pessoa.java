@@ -19,7 +19,7 @@ public class Pessoa implements Serializable{
 	 @GeneratedValue(strategy = GenerationType.AUTO)
 	 private Long id;
 	 
-	 private String nome, sexo;
+	 private String nome, sobrenome, sexo, telefone;
 	 private int idade;
 	 
 	public Long getId() {
@@ -46,6 +46,20 @@ public class Pessoa implements Serializable{
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getSobrenome() {
+		return sobrenome;
+	}
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+	
+	
 	 
 	 
 
