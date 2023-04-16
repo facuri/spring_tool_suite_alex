@@ -1,7 +1,6 @@
 package com.spring.projetopessoa.model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,8 +21,6 @@ public class Pessoa implements Serializable{
 	 
 	 private String nome, sobrenome, sexo, telefone, dataNascimento;
 	 private int idade;
-	 private Date dataCadastro;
-	  
 	 
 	public Long getId() {
 		return id;
@@ -68,12 +65,6 @@ public class Pessoa implements Serializable{
 		this.dataNascimento = dataNascimento;
 	}
 	
-    public Date getDataCadastro() {
-		return dataCadastro;
-	}
-	public void setDataCadastro(Date dataCadastro) {
-		this.dataCadastro = dataCadastro;
-	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
