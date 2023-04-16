@@ -1,6 +1,7 @@
 package com.spring.projetopessoa.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +22,7 @@ public class Pessoa implements Serializable{
 	 
 	 private String nome, sobrenome, sexo, telefone, dataNascimento;
 	 private int idade;
+	 private Date dataCadastro2;
 	 
 	public Long getId() {
 		return id;
