@@ -21,7 +21,7 @@ public class Pessoa implements Serializable{
 	 
 	 private String nome, sobrenome, sexo, telefone, dataNascimento;
 	 private int idade;
-	 private String endereco;
+	 private String enderecoComercial;
 	 
 	public Long getId() {
 		return id;
