@@ -80,5 +80,14 @@ public class PessoaControler {
 		andView.addObject("pessoaobj", new Pessoa());
 		return andView;
 	}
+	
+	 
+	@RequestMapping(method = RequestMethod.POST, value = "/salvarpessoa")
+	public String salvarPessoa(Pessoa pessoa) {
+		pessoaRepository.save(pessoa);
+		return "cadastro/cadastropessoa";
+		
+	}
+	 
 
 }
